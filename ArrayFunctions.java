@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Random;
 
 /**
@@ -22,27 +23,23 @@ public class ArrayFunctions {
         return array;
     }
 
+    // find min value with sort algorithm
     public static int findMin(int[] array) {
-        int min = array[0];
-        for(int i = 1; i < array.length; i++){
-            if(array[i] < min){
-                min = array[i];
-            }
-        }
-        return min;
+        int sorted [] =Arrays.copyOf(array, array.length);
+        Arrays.sort(sorted);
+        
+        return sorted[0];
     }
 
-    
+    // find max value with sort algorithm
     public static int findMax(int[] array) {
-        int max = array[0];
-        for(int i = 1; i < array.length; i++){
-            if(array[i] > max){
-                max = array[i];
-            }
-        }
-        return max;
+        int sorted [] =Arrays.copyOf(array, array.length);
+        Arrays.sort(sorted);
+        
+        return sorted[sorted.length - 1];
     }
 
+    //find avarage value
     public static double findAverage(int[] array) {
 
         int sum = 0;
@@ -54,7 +51,7 @@ public class ArrayFunctions {
         }
         return 0;
     }
-
+    // Find Differences From Average
     public static double[] getDifferencesFromAverage(int[] array, double average) {
         double[] differences = new double[array.length];
         for(int i = 0; i < array.length; i++){
@@ -63,6 +60,7 @@ public class ArrayFunctions {
         return differences;
     }
 
+    // Sum Of Odd Numbered Elements
     public static int sumOfOddNumberedElements(int[] array) {
         int sum = 0;
         for(int i = 1; i < array.length; i+=2){
@@ -71,6 +69,7 @@ public class ArrayFunctions {
         return sum;
     }
 
+    // Sum Of Even Numbered Elements
     public static int sumOfEvenNumberedElements(int[] array) {
         int sum = 0;
         for(int i = 0; i < array.length; i+=2){

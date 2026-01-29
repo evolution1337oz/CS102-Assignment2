@@ -73,7 +73,7 @@ public class Menu {
             } 
             
             else if (option == 4) { // Exit Program
-                System.out.println("Closing Program.");
+                System.out.println("The Program is Terminated.");
 
             } 
             
