@@ -14,7 +14,12 @@ public class ArrayFunctions {
 
     
     public static int[] createRandomArray(int arraySize) {
-        return new int[0];
+        Random rand = new Random();
+        int[] array = new int[arraySize];
+        for(int i = 0; i < array.length; i++){
+            array[i] = rand.nextInt(101);
+        }
+        return array;
     }
 
     public static int findMin(int[] array) {
@@ -51,14 +56,26 @@ public class ArrayFunctions {
     }
 
     public static double[] getDifferencesFromAverage(int[] array, double average) {
-        return new double[0];
+        double[] differences = new double[array.length];
+        for(int i = 0; i < array.length; i++){
+            differences[i] = array[i] - average;
+        }
+        return differences;
     }
 
     public static int sumOfOddNumberedElements(int[] array) {
-        return 0;
+        int sum = 0;
+        for(int i = 1; i < array.length; i+=2){
+            sum += array[i];
+        }
+        return sum;
     }
 
     public static int sumOfEvenNumberedElements(int[] array) {
-        return 0;
+        int sum = 0;
+        for(int i = 0; i < array.length; i+=2){
+            sum += array[i];
+        }
+        return sum;
     }
 }
