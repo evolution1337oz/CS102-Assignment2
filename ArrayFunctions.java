@@ -6,9 +6,9 @@ import java.util.Random;
  * 
  * @author Evrim Mete Öztürk
  * @author Damla Su Bilge
- * @author
+ * @author Osman Ekrem Tuştaş
  * 
- * @date 
+ * @date 29.01.2026
  */
 
 public class ArrayFunctions {
