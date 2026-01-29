@@ -4,7 +4,7 @@ import java.util.Scanner;
  * This is the interface of the array operations app
  * 
  * @author Evrim Mete Öztürk
- * @author
+ * @author Damla Su Bilge
  * @author
  * 
  * @date 
