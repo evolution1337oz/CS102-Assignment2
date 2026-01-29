@@ -5,7 +5,7 @@ import java.util.Scanner;
  * 
  * @author Evrim Mete Öztürk
  * @author Damla Su Bilge
- * @author
+ * @author OSman Ekrem Tuştaş
  * 
  * @date 
  */

@@ -12,7 +12,7 @@ import java.util.Random;
 
 public class ArrayFunctions {
 
-    
+    // to create random int array with given size
     public static int[] createRandomArray(int arraySize) {
         Random rand = new Random();
         int[] array = new int[arraySize];
