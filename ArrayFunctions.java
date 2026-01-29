@@ -4,7 +4,7 @@ import java.util.Random;
  * This is the functions class of the array operations app
  * 
  * @author Evrim Mete Öztürk
- * @author
+ * @author Damla Su Bilge
  * @author
  * 
  * @date 
@@ -18,15 +18,35 @@ public class ArrayFunctions {
     }
 
     public static int findMin(int[] array) {
-        return 0; 
+        int min = array[0];
+        for(int i = 1; i < array.length; i++){
+            if(array[i] < min){
+                min = array[i];
+            }
+        }
+        return min;
     }
 
     
     public static int findMax(int[] array) {
-        return 0;
+        int max = array[0];
+        for(int i = 1; i < array.length; i++){
+            if(array[i] > max){
+                max = array[i];
+            }
+        }
+        return max;
     }
 
     public static double findAverage(int[] array) {
+
+        int sum = 0;
+        for(int i = 0; i < array.length; i++){
+            sum += array[i];
+        }
+        if(array.length > 0){
+            return (double) sum / array.length;
+        }
         return 0;
     }
 

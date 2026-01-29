@@ -10,7 +10,7 @@ import java.util.Scanner;
  * @date 
  */
 
-public class main {
+public class Menu {
     public static void main(String[] args) {
         Scanner userInput = new Scanner(System.in);
 
